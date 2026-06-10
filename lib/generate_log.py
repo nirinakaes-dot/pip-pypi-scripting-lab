@@ -7,11 +7,11 @@ def generate_log(data):
     # STEP 1: Validate input
     # Hint: Check if data is a list
     if isinstance(data ,list):
-        raise ValueError('Data must be a list')
+        raise ValueError("This should be a list")
 
     # STEP 2: Generate a filename with today's date (e.g., "log_20250408.txt")
     # Hint: Use datetime.now().strftime("%Y%m%d")
-    filename=(-f'log_ {datetime.now().strftime('%Y%m%d:.2f')}.text')
+    filename=(-f'log_ {datetime.now().strftime('%Y%m%d')}.text')
 
     # STEP 3: Write the log entries to a file using File I/O
     # Use a with open() block and write each line from the data list
@@ -22,6 +22,6 @@ def generate_log(data):
 
 
     # STEP 4: Print a confirmation message with the filename
-    print(-f'Log saved to {filename}')..
+    print(-f'Log saved to {filename}')
 
     

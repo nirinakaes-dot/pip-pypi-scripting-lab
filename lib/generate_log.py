@@ -11,3 +11,4 @@ def generate_log(data):
             file.write(f"{entry}\n")
 
     print(f"Log saved to {filename}")
+    return filename
